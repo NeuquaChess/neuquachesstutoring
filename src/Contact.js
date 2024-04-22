@@ -25,7 +25,7 @@ const Contact = () => {
     //   }
     // }
     e.preventDefault();
-    
+    let hasReturned = false;
     fetch("https://discord.com/api/webhooks/1227608813490929694/sZvCRYZB9tbIDEJvOMnz9VbqhLPM-EbP5RH7oaT2jgmhQ3yUnOK-ghLYE-Sonv96Jbs8", {
       method: 'POST',
       body: JSON.stringify({'content' : JSON.stringify(formData,null,2).replace(/"/g,'')}),
@@ -35,12 +35,16 @@ const Contact = () => {
     }
   })
   .then(e => {
+    hasReturned = true;
     document.querySelector(".alert-info").classList.add("d-none");
     if (e.ok)
       document.querySelector(".alert-success").classList.remove("d-none");
      else 
       document.querySelector(".alert-danger").classList.remove("d-none");
     document.querySelectorAll(".form-control").forEach(e => {e.value = ''});
+  }).catch(e => {
+    document.querySelector(".alert-info").classList.add("d-none");
+    document.querySelector(".alert-danger").classList.remove("d-none");
   });
   };
 
@@ -49,7 +53,7 @@ const Contact = () => {
     <div className="container mt-5" style={{ maxWidth: '80%' }}>
       <div className="border border-primary p-4 rounded">
         <div class="alert alert-danger d-none" role="alert">
-          Something went wrong! Instead, contact us directly at neuquachess@gmail.com.
+          Something went wrong! If your device has a web filter, chances are the message was sent but we can't make sure. Contact us directly at neuquachess@gmail.com.
         </div>
         <div class="alert alert-success d-none" role="alert">
           Success! Your message has been recieved, we will get back to you on the provided email!
