@@ -6,6 +6,7 @@ import kundan from './images/kundan.png';
 import vrishank from './images/vrishank.png';
 import nevin from './images/nevin.png';
 import rishi from './images/rishi.png';
+import arnav from './ArnavPic.jpg';
 
 function About() {
   return (
@@ -15,12 +16,23 @@ function About() {
         <Row>
           <Col md={3}>
             <Card>
+              <Card.Img variant="top" src={arnav} />
+              <Card.Body>
+                <Card.Title>Arnav Sheth</Card.Title>
+                <Card.Text>
+                  Arnav Arnav Arnav Arnav Arnav.
+                </Card.Text>
+              </Card.Body>
+            </Card>
+          </Col>
+          <Col md={3}>
+            <Card>
               <Card.Img variant="top" src={vrishank} />
               <Card.Body>
                 <Card.Title>Vrishank Ramnath</Card.Title>
                 <Card.Text>
                   When he isn't fiddling his violin, Vrishank loves playing chess. This highschool junior is a 2-time chess state champion and placed 4th in Nationals, so watch out!
-                  <br/><br/><br/>
+                  <br/><br/>
                 </Card.Text>
               </Card.Body>
             </Card>
