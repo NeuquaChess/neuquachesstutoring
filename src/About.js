@@ -6,26 +6,27 @@ import kundan from './images/kundan.png';
 import vrishank from './images/vrishank.png';
 import nevin from './images/nevin.png';
 import rishi from './images/rishi.png';
-import arnav from './ArnavPic.jpg';
+import arnav from './images/arnav.png';
 
 function About() {
   return (
     <section id="about" className="section about">
-      <Container>
-        <h2>About Us</h2>
+      <Container id = "b">
+        <h1>About Us</h1>
+        <br/>
         <Row>
-          <Col md={3}>
+          <Col md={4}>
             <Card>
               <Card.Img variant="top" src={arnav} />
               <Card.Body>
                 <Card.Title>Arnav Sheth</Card.Title>
                 <Card.Text>
-                  Arnav Arnav Arnav Arnav Arnav.
+                When he isn't fiddling his violin, Vrishank loves playing chess. This highschool junior is a 2-time chess state champion and placed 4th in Nationals, so watch out!<br/><br/>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <Card>
               <Card.Img variant="top" src={vrishank} />
               <Card.Body>
@@ -37,30 +38,31 @@ function About() {
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <Card>
               <Card.Img variant="top" src={rishi} />
               <Card.Body>
                 <Card.Title>Rishi Murali</Card.Title>
                 <Card.Text>
-                  He's a sophomore that's great at writing and reading, but above all, he loves playing chess. Rishi placed 2nd at the Illinois All Grade Championship, so take him seriously!  
+                  He's a sophomore that's great at writing and reading, but above all, he loves playing chess. Rishi placed 2nd at the Illinois All Grade Championship, so take him seriously!<br/><br/>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3}>
+          </Row><br/><Row>
+          <Col md={4}>
             <Card>
               <Card.Img variant="top" src={nevin} />
               <Card.Body>
                 <Card.Title>Nevin Philip</Card.Title>
                 <Card.Text>
                   A veteran at the game, Nevin has played chess for over 12 years! He's a junior that enjoys swimming and biking on the weekends.
-                  <br/><br/><br/>
+                  <br/><br/>
                 </Card.Text>
               </Card.Body>
             </Card>
           </Col>
-          <Col md={3}>
+          <Col md={4}>
             <Card>
               <Card.Img variant="top" src={kundan} />
               <Card.Body>

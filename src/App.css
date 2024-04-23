@@ -51,3 +51,13 @@
 Nav {
   cursor:pointer !important;
 }
+
+
+.row {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-3 {
+  flex: 0 0 auto; /* Reset flex basis to auto */
+}
