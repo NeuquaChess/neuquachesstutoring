@@ -53,13 +53,13 @@ const Contact = () => {
     <div className="container mt-5" style={{ maxWidth: '80%' }}>
       <div className="border border-primary p-4 rounded">
         <div class="alert alert-danger d-none" role="alert">
-          Something went wrong! If your device has a web filter, chances are the message was sent but we can't make sure. Contact us directly at neuquachess@gmail.com.
+          Something went wrong! If your device has a web filter, there's a chance the message wasn't sent. Please contact us directly at neuquachess@gmail.com.
         </div>
         <div class="alert alert-success d-none" role="alert">
-          Success! Your message has been recieved, we will get back to you on the provided email!
+          Success! Your message has been recieved, we will get back to you soon!
         </div>
         <div class="alert alert-info" role="alert">
-          Please fill this out if you are interested! This does not commit you to anything.<br/>Sessions take place at 95th street library.
+          Please fill this out if you are interested! This does not commit you to anything.
         </div>
         <h1 className = "text-align">Interest form</h1>
         <form onSubmit={handleSubmit}>
