@@ -21,7 +21,7 @@ function About() {
               <Card.Body>
                 <Card.Title>Arnav Sheth</Card.Title>
                 <Card.Text>
-                When he isn't fiddling his violin, Vrishank loves playing chess. This highschool junior is a 2-time chess state champion and placed 4th in Nationals, so watch out!<br/><br/>
+                Normally found in his home playing Valorant, this junior caught everyone by surprise when he seemingly improved overnight. Now one of our best, Arnav is sure to provide some clever insights for your child!<br/>
                 </Card.Text>
               </Card.Body>
             </Card>
