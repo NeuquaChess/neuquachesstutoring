@@ -25,7 +25,6 @@ const Contact = () => {
     //   }
     // }
     e.preventDefault();
-    let hasReturned = false;
     fetch("https://discord.com/api/webhooks/1227608813490929694/sZvCRYZB9tbIDEJvOMnz9VbqhLPM-EbP5RH7oaT2jgmhQ3yUnOK-ghLYE-Sonv96Jbs8", {
       method: 'POST',
       body: JSON.stringify({'content' : JSON.stringify(formData,null,2).replace(/"/g,'')}),
@@ -35,7 +34,6 @@ const Contact = () => {
     }
   })
   .then(e => {
-    hasReturned = true;
     document.querySelector(".alert-info").classList.add("d-none");
     if (e.ok)
       document.querySelector(".alert-success").classList.remove("d-none");
